@@ -12,8 +12,11 @@ I developed this project as part of my learning journey to understand how to bui
 - 💳 Product listing, product details, and shopping cart functionality  
 - 🛠️ **API routes** for handling backend logic  
 - 💅 Styled using **Tailwind CSS** for a clean and responsive design  
-- 🔐 Authentication and user management  
-- 🧾 Checkout flow integration  
+
+### 🔮 Future Enhancements
+
+- 🔐 **Authentication** — Implement user sign-up, login, and session management  
+- 🧾 **Checkout Flow Integration** — Add a secure payment and order processing system
 
 ---
 
