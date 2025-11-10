@@ -1,42 +1,55 @@
-# Next.js: Creating and Hosting a Full-Stack Site
-This is the repository for the LinkedIn Learning course `Next.js: Creating and Hosting a Full-Stack Site`. The full course is available from [LinkedIn Learning][lil-course-url].
+# 🛒 Next.js E-commerce Application
 
-![lil-thumbnail-url]
+This is a modern and responsive **E-commerce web application** built using **Next.js**, **React**, and **MongoDB**.  
+I developed this project as part of my learning journey to understand how to build a full-stack e-commerce platform with modern web technologies.
 
-## Course Description
+---
 
-Many web developers focus solely on one part of an application: the front end, the back end, the database, or the hosting platform. However, JavaScript has become such a pervasive language that it can be used for all of these parts. This means that a single JavaScript developer can now create an entire web application, a task that used to require an entire team. In this course, full-stack development instructor Shaun Wassell shows developers how to do exactly that by using Next.js to build a full-stack application. Find out how to build basic React interfaces in Next.js, add back-end functionality to Next.js applications, make network requests, and finally host a full-stack Next.js application so that anyone can use it.
+## 🚀 Features
 
-_See the readme file in the main branch for updated instructions and information._
-## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
+- ⚡ Built with **Next.js 14** for SSR and static generation  
+- 🧩 **React** for an interactive and dynamic user interface  
+- 💳 Product listing, product details, and shopping cart functionality  
+- 🛠️ **API routes** for handling backend logic  
+- 💅 Styled using **Tailwind CSS** for a clean and responsive design  
+- 🔐 Authentication and user management  
+- 🧾 Checkout flow integration  
 
-## Branches
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
+---
 
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
+## 🧰 Tech Stack
 
-    error: Your local changes to the following files would be overwritten by checkout:        [files]
-    Please commit your changes or stash them before you switch branches.
-    Aborting
+- **Frontend:** Next.js, React, Tailwind CSS  
+- **Backend:** Next.js API Routes / Node.js  
+- **Database:** MongoDB (via Mongoose)  
+- **Deployment:** Vercel
 
-To resolve this issue:
-	
-    Add changes to git using this command: git add .
-	Commit changes using this command: git commit -m "some message"
+---
 
-## Instructor
+## 🏁 Getting Started
 
-Shaun Wassell
+Follow these steps to set up and run the project locally.
 
-Senior Software Engineer, Educator at CBT Nuggets
+```bash
+1. Clone the Repository
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
 
+2. Install Dependencies
+npm install
 
-Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/shaun-wassell?u=104).
+3. Set Up Environment Variables
+Create a file named .env.local in the root directory of your project and add the following:
+MONGODB_USER=your_mongodb_username
+MONGODB_PASSWORD=your_mongodb_password
+MONGODB_URI=mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@cluster0.jeaewlp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 
-[0]: # (Replace these placeholder URLs with actual course URLs)
+NEXT_PUBLIC_API_URL=http://localhost:3000
 
-[lil-course-url]: https://www.linkedin.com/learning/next-js-creating-and-hosting-a-full-stack-site
-[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D560DAQHXePcdOQve_w/learning-public-crop_675_1200/learning-public-crop_675_1200/0/1730333299899?e=2147483647&v=beta&t=rjCaYb0ANoXYa7lncnl68kQ4Ke6cXk60CBXlxXl4R6w
+4. Run the Development Server
+npm run dev
 
+Then open your browser and go to:
+
+👉 http://localhost:3000
+```
